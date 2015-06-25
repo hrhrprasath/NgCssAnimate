@@ -22,6 +22,10 @@ return {
 			animationCalss ='animated '+newval;
 			if(triggerElement && triggerElementEvt)
 				addEvent(triggerElement,triggerElementEvt,treggerElementCB);
+			else if(!event)
+					element.addClass(animationCalss);
+			if(event)
+				addEvent(element,event,elementCB);
 			}
 		});
 	 }
