@@ -9,14 +9,14 @@
 			background-color:silver;
 		}
 		</style>
-  <title>NG-Animator </title>
+  <title>NG-Css-Animate </title>
     </head>
     <body ng-app="nganimator" ng-init="animationclass='bounce'" >
 	<div class="anidiv" ani ani-class ="bounce" ani-event="click" ani-event-once="true" ani-scope-class-var="animationclass" ani-trigger-element-id="animateit" ani-trigger-element-event="click" ani-trigger-once="true">
-	NG-Animator
+	NG-Css-Animate
 	</div>
 	<div class="anidiv" ani ani-class ="bounce" ani-additional-class="infinite">
-	NG-Animator
+	NG-Css-Animate
 	</div>
 	<select ng-model="animationclass">
         <optgroup label="Attention Seekers">
@@ -139,6 +139,6 @@
       </select>
 	  <button id="animateit">Animate it </button>
 	<script type="text/javascript" src="js/angular.min.js"></script>
-	<script type="text/javascript" src="js/ngAnimator.js"></script>
+	<script type="text/javascript" src="js/ngCssAnimate.js"></script>
     </body>
 </html>
