@@ -55,28 +55,33 @@
 			text-align: center;
 		}
 		
-		code{
-			  background-color: rgba(232, 232, 232, 1);
-			  padding: 5px;
-		}
 		.comb{
 			margin-left: calc(50% - 125px);
 			display: inline;
 		}
+		pre {
+		  padding: 0.8rem;
+		  overflow: auto;
+		  font-size: 0.9rem;
+		  line-height: 1.45;
+		  border-radius: 0.3rem;
+		    margin-top: 0;
+		  margin-bottom: 1rem;
+		  font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+		  color: #567482;
+		  word-wrap: normal;
+		  background-color: #f3f6fa;
+		  border: solid 1px #dce6f0
+		}
 		</style>
   <title>NG-Css-Animate </title>
     </head>
-	<body ng-app="nganimator" ng-init="animationclass='bounce'" >
+	<body ng-app="ngcssanimate" ng-init="animationclass='bounce'" >
 		<div class="container">
 		<span class="hdng" >NG-Css-Animate Demo</span>
-			<!-- ---------------------------------------------------------------------------- -->
+		<!-- ---------------------------------------------------------------------------- -->
 			<h1>Without event[Default]:</h1>	
-			<code>
-				<span>	<<span>
-				div class="anidiv" ani ani-class ="bounce"
-				</span>><span><</span>/div>
-				</span>
-			</code>
+									<pre><code>&lt;div class="anidiv" ani ani-class ="bounce"&gt;&lt;/div&gt;</code></pre>
 			<br/><br/><br/><br/>
 			
 			<div class="anidiv" ani ani-class ="bounce" ></div>
@@ -85,12 +90,8 @@
 			
 			<!-- ---------------------------------------------------------------------------- -->
 			<h1>Without event Infinite Times:</h1>
-			<code>			
-				<span>	<<span>
-					div class="anidiv" ani ani-class ="bounce" ani-additional-class="infinite"
-				</span>><span><</span>/div>
-				</span>
-			</code>	
+			<pre><code>&lt;div class="anidiv" ani ani-class ="bounce" ani-additional-class="infinite"&gt;&lt;/div&gt;</code></pre>
+			
 			<br/><br/><br/><br/>
 			
 			<div class="anidiv" ani ani-class ="bounce" ani-additional-class="infinite"></div>
@@ -99,12 +100,7 @@
 			
 			<!-- ---------------------------------------------------------------------------- -->
 			<h1>With event OnClick Infinite Times:</h1>	
-			<code>	
-				<span>	<<span>
-					div class="anidiv" ani ani-class ="fadeIn" ani-event="click" 
-				</span>><span><</span>/div>
-				</span>
-			</code>		
+			<pre><code>&lt;div class="anidiv" ani ani-class ="fadeIn" ani-event="click" &gt;&lt;/div&gt;</code></pre>
 			<br/><br/><br/><br/>
 			
 			<div class="anidiv" ani ani-class ="fadeIn" ani-event="click" ></div>
@@ -113,12 +109,7 @@
 			
 			<!-- ---------------------------------------------------------------------------- -->
 			<h1>With event OnClick only one Time:</h1>	
-			<code>	
-				<span>	<<span>
-					div class="anidiv" ani ani-class ="flash" ani-event="click" ani-event-once="true" 
-				</span>><span><</span>/div>
-				</span>
-			</code>	
+			<pre><code>&lt;div class="anidiv" ani ani-class ="flash" ani-event="click" ani-event-once="true" &gt;&lt;/div&gt;</code></pre>
 			<br/><br/><br/><br/>
 			
 			<div class="anidiv" ani ani-class ="flash" ani-event="click" ani-event-once="true" ></div>
@@ -127,12 +118,8 @@
 			
 			<!-- ---------------------------------------------------------------------------- -->
 			<h1>Click on Button Infinite Times:</h1>	
-			<code>	
-				<span>	<<span>
-					div class="anidiv" ani ani-class ="flipInX"  ani-trigger-element-id="btn1" ani-trigger-element-event="click"
-				</span>><span><</span>/div>
-				</span>
-			</code>	
+			<pre><code>&lt;div class="anidiv" ani ani-class ="flipInX"  ani-trigger-element-id="btn1"
+ani-trigger-element-event="click"&gt;&lt;/div&gt;</code></pre>
 			<br/><br/><br/><br/>
 			
 			<div class="anidiv" ani ani-class ="flipInX" ani-trigger-element-id="btn1" ani-trigger-element-event="click" ></div><br/>
@@ -141,12 +128,8 @@
 			
 			<!-- ---------------------------------------------------------------------------- -->
 			<h1>Click on Button only one Time:</h1>	
-			<code>	
-				<span>	<<span>
-					div class="anidiv" ani ani-class ="flipInX"  ani-trigger-element-id="btn1" ani-trigger-element-event="click" ani-trigger-once="true"
-				</span>><span><</span>/div>
-				</span>
-			</code>	
+			<pre><code>&lt;div class="anidiv" ani ani-class ="flipInX"  ani-trigger-element-id="btn1"
+ani-trigger-element-event="click" ani-trigger-once="true"&gt;&lt;/div&gt;</code></pre>
 			<br/><br/><br/><br/>
 			
 			<div class="anidiv" ani ani-class ="flipInX" ani-trigger-element-id="btn2" ani-trigger-element-event="click" ani-trigger-once="true" ></div><br/>
@@ -155,12 +138,7 @@
 			
 			<!-- ---------------------------------------------------------------------------- -->
 			<h1>Using Class From Scope variable:</h1>	
-			<code>	
-				<span>	<<span>
-					div class="anidiv" ani  ani-scope-class-var="animationclass"
-				</span>><span><</span>/div>
-				</span>
-			</code>	
+			<pre><code>&lt;div class="anidiv" ani  ani-scope-class-var="animationclass"&gt;&lt;/div&gt;</code></pre>
 			<br/><br/><br/><br/>
 			
 			<div class="anidiv" ani ani-scope-class-var="animationclass" ></div><br/>
@@ -287,12 +265,9 @@
 			
 			<!-- ---------------------------------------------------------------------------- -->
 			<h1>Combining all:</h1>	
-			<code>	
-				<span>	<<span>
-					div class="anidiv" ani ani-class ="bounce" ani-event="click" ani-event-once="true" ani-scope-class-var="animationclass" ani-trigger-element-id="animateit" ani-trigger-element-event="click" ani-trigger-once="true"
-				</span>><span><</span>/div>
-				</span>
-			</code>		
+			<pre><code>&lt;div class="anidiv" ani ani-class ="bounce" ani-event="click" ani-event-once="true"
+ani-scope-class-var="animationclass" ani-trigger-element-id="animateit"
+ani-trigger-element-event="click" ani-trigger-once="true"&gt;&lt;/div&gt;</code></pre>
 			<br/><br/><br/><br/>
 			
 			<div class="anidiv" ani ani-class ="bounce" ani-event="click" ani-event-once="true" ani-scope-class-var="animationclass" ani-trigger-element-id="animateit" ani-trigger-element-event="click" ani-trigger-once="true">

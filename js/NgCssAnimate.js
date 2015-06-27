@@ -1,4 +1,4 @@
-angular.module("nganimator",[])
+angular.module("ngcssanimate",[])
 .directive('ani',function(){
 return {
 	restrict: 'A',
