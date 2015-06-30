@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<style>
+		.anidiv{
+			width: 100px;
+			height: 100px;
+			background-color: rgb(124, 101, 232);
+			border-radius: 200px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.container{
+			width: 70%;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 15px;
+		}
+		button {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			width: 100px;
+			height: 30px;
+			background-color:rgb(226, 234, 250);/* rgb(255, 203, 203);*/
+			border: 1px solid rgb(124, 101, 232);
+			border-radius: 10px;
+			font-family:"Courier New", Courier, monospace !important;
+		}
+		select {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			width: 150px;
+			height: 30px;
+			/*background-color: rgb(255, 203, 203);*/
+			border: 1px solid rgb(124, 101, 232);
+			border-radius: 10px;
+			font-family:"Courier New", Courier, monospace !important;
+		}
+		body{
+			/*background-color: rgb(255, 151, 151)*/
+			font-family:"Courier New", Courier, monospace !important;
+		}
+		.hdng{
+			font-size: 45px;
+			margin-left: auto;
+			margin-right: auto;
+			display: table;
+			padding:25px;
+		}
+		.info{
+			text-align: center;
+		}
+		
+		.comb{
+			margin-left: calc(50% - 125px);
+			display: inline;
+		}
+		pre {
+		  padding: 0.8rem;
+		  overflow: auto;
+		  font-size: 0.9rem;
+		  line-height: 1.45;
+		  border-radius: 0.3rem;
+		    margin-top: 0;
+		  margin-bottom: 1rem;
+		  font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+		  color: #567482;
+		  word-wrap: normal;
+		  background-color: #f3f6fa;
+		  border: solid 1px #dce6f0
+		}
+		</style>
+  <title>NG-Css-Animate </title>
+    </head>
+	<body ng-app="ngcssanimate" ng-init="animationclass='slideInRight'" >
+		<div class="container">
+			<span class="hdng" >NG-Css-Animate scroll Demo</span>
+			<!-- ---------------------------------------------------------------------------- -->
+				<br/><br/>
+				
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)"ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)"ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				
+				<br/><br/><hr/><br/><br/>
+				  <!-- ---------------------------------------------------------------------------- -->
+			<div class="info">Download
+				<a href="http://github.com/hrhrprasath/NgCssAnimate/blob/master/dist/NgCssAnimate.min.js?raw=true">
+				 NgCssAnimate.min.js</a> or view in
+				<a href="http://github.com/hrhrprasath/NgCssAnimate">
+				 Github
+				</a><br/><br/>
+				This Project is Under <a href="http://github.com/hrhrprasath/NgCssAnimate/blob/master/LICENSE">MTI Licence </a>
+			</div>
+		</div>
+		<a href="http://github.com/hrhrprasath/NgCssAnimate"><img style="position: fixed; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png"></a>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/NgCssAnimate.js"></script>
+    </body>
+</html>
