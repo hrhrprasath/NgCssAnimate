@@ -12,7 +12,22 @@ return {
 		var triggerElementId = attrs['aniTriggerElementId'] || '';
 		var triggerElementOnce = attrs['aniTriggerOnce'] || '';
 		var onDomScroll = attrs['aniOnDomScroll'] || '';
+		var delay = parseInt( attrs['aniDelayStart'] || '0');
 		var triggerElement,animationCalss,anngularDoc;
+		var triggerAnimation = function()
+		{
+			if(!delay)
+				element.addClass(animationCalss);
+			else
+			{
+				var delayedTrigger= function()
+				{
+					element.addClass(animationCalss);
+				}
+				setTimeout(delayedTrigger,delay);
+				//delay=0;
+			}
+		};
 		if(triggerElementId)
 			triggerElement = angular.element(document.getElementById(triggerElementId));
 		if(scopeclass){
@@ -24,7 +39,7 @@ return {
 					if(triggerElement && triggerElementEvt)
 						addEvent(triggerElement,triggerElementEvt,treggerElementCB);
 					else if(!event)
-							element.addClass(animationCalss);
+							triggerAnimation();
 					if(event)
 						addEvent(element,event,elementCB);
 				}
@@ -40,12 +55,12 @@ return {
 			ele.unbind(evnt,callback);
 		};
 		var elementCB =function(){
-			element.addClass(animationCalss);
+			triggerAnimation();
 			if(eventOnce)
 				removeEvent(element,event,elementCB)
 		};
 		var treggerElementCB = function(){
-			element.addClass(animationCalss);
+			triggerAnimation();
 			if(triggerElementOnce)
 				removeEvent(triggerElement,triggerElementEvt,treggerElementCB);
 		};
@@ -54,7 +69,7 @@ return {
 			var left = (window.pageXOffset || doc.scrollLeft) - (doc.clientLeft || 0);
 			var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 			if(element[0].offsetTop < top+window.innerHeight && element[0].offsetTop > window.innerHeight ){
-			 element.addClass(animationCalss);
+			 triggerAnimation();
 			 removeEvent(anngularDoc,"scroll",domScrollCB);
 			}
 		};
@@ -63,9 +78,9 @@ return {
 		}
 		else if(!triggerElement && !triggerElementEvt){
 			if(onDomScroll && element[0].offsetTop < window.innerHeight)
-				element.addClass(animationCalss);
+				triggerAnimation();
 			else
-				element.addClass(animationCalss);
+				triggerAnimation();
 		}
 		if(triggerElement && triggerElementEvt)
 		{
