@@ -81,64 +81,71 @@
 			<!-- ---------------------------------------------------------------------------- -->
 			<h1>Without event[Default]:</h1>	
 									<pre><code>&lt;div class="anidiv" ani ani-class ="bounce"&gt;&lt;/div&gt;</code></pre>
-			<br/><br/><br/><br/>
+			<br/><br/>
 			
 			<div class="anidiv" ani ani-class ="bounce" ></div>
 			
-			<br/><br/><hr/><br/><br/>
+			<br/><br/><hr/>
+			<!-- ---------------------------------------------------------------------------- -->
+			<h1>Without event and Start Delay :</h1>	
+			<pre><code>&lt;div class="anidiv" ani ani-class ="bounce" ani-delay-start="2000"&gt;&lt;/div&gt;</code></pre>
+			<br/><br/>
 			
+			<div class="anidiv" ani ani-class ="bounce" ani-delay-start="2000" ></div>
+			
+			<br/><br/><hr/>
 			<!-- ---------------------------------------------------------------------------- -->
 			<h1>Without event Infinite Times:</h1>
 			<pre><code>&lt;div class="anidiv" ani ani-class ="bounce" ani-additional-class="infinite"&gt;&lt;/div&gt;</code></pre>
 			
-			<br/><br/><br/><br/>
+			<br/><br/>
 			
 			<div class="anidiv" ani ani-class ="bounce" ani-additional-class="infinite"></div>
 			
-			<br/><br/><hr/><br/><br/>
+			<br/><br/><hr/>
 			
 			<!-- ---------------------------------------------------------------------------- -->
 			<h1>With event OnClick Infinite Times:</h1>	
 			<pre><code>&lt;div class="anidiv" ani ani-class ="fadeIn" ani-event="click" &gt;&lt;/div&gt;</code></pre>
-			<br/><br/><br/><br/>
+			<br/><br/>
 			
 			<div class="anidiv" ani ani-class ="fadeIn" ani-event="click" ></div>
 			
-			<br/><br/><hr/><br/><br/>
+			<br/><br/><hr/>
 			
 			<!-- ---------------------------------------------------------------------------- -->
 			<h1>With event OnClick only one Time:</h1>	
 			<pre><code>&lt;div class="anidiv" ani ani-class ="flash" ani-event="click" ani-event-once="true" &gt;&lt;/div&gt;</code></pre>
-			<br/><br/><br/><br/>
+			<br/><br/>
 			
 			<div class="anidiv" ani ani-class ="flash" ani-event="click" ani-event-once="true" ></div>
 			
-			<br/><br/><hr/><br/><br/>
+			<br/><br/><hr/>
 			
 			<!-- ---------------------------------------------------------------------------- -->
 			<h1>Click on Button Infinite Times:</h1>	
 			<pre><code>&lt;div class="anidiv" ani ani-class ="flipInX"  ani-trigger-element-id="btn1"
 ani-trigger-element-event="click"&gt;&lt;/div&gt;</code></pre>
-			<br/><br/><br/><br/>
+			<br/><br/>
 			
 			<div class="anidiv" ani ani-class ="flipInX" ani-trigger-element-id="btn1" ani-trigger-element-event="click" ></div><br/>
 			<button id="btn1">Animate it </button>
-			<br/><br/><hr/><br/><br/>
+			<br/><br/><hr/>
 			
 			<!-- ---------------------------------------------------------------------------- -->
 			<h1>Click on Button only one Time:</h1>	
 			<pre><code>&lt;div class="anidiv" ani ani-class ="flipInX"  ani-trigger-element-id="btn1"
 ani-trigger-element-event="click" ani-trigger-once="true"&gt;&lt;/div&gt;</code></pre>
-			<br/><br/><br/><br/>
+			<br/><br/>
 			
 			<div class="anidiv" ani ani-class ="flipInX" ani-trigger-element-id="btn2" ani-trigger-element-event="click" ani-trigger-once="true" ></div><br/>
 			<button id="btn2">Animate it </button>
-			<br/><br/><hr/><br/><br/>
+			<br/><br/><hr/>
 			
 			<!-- ---------------------------------------------------------------------------- -->
 			<h1>Using Class From Scope variable:</h1>	
 			<pre><code>&lt;div class="anidiv" ani  ani-scope-class-var="animationclass"&gt;&lt;/div&gt;</code></pre>
-			<br/><br/><br/><br/>
+			<br/><br/>
 			
 			<div class="anidiv" ani ani-scope-class-var="animationclass" ></div><br/>
 			<select ng-model="animationclass">
@@ -260,14 +267,14 @@ ani-trigger-element-event="click" ani-trigger-once="true"&gt;&lt;/div&gt;</code>
 				  <option value="rollOut">rollOut</option>
 				</optgroup>
 			  </select>
-			<br/><br/><hr/><br/><br/>
+			<br/><br/><hr/>
 			
 			<!-- ---------------------------------------------------------------------------- -->
 			<h1>Combining all:</h1>	
 			<pre><code>&lt;div class="anidiv" ani ani-class ="bounce" ani-event="click" ani-event-once="true"
 ani-scope-class-var="animationclass" ani-trigger-element-id="animateit"
 ani-trigger-element-event="click" ani-trigger-once="true"&gt;&lt;/div&gt;</code></pre>
-			<br/><br/><br/><br/>
+			<br/><br/>
 			
 			<div class="anidiv" ani ani-class ="bounce" ani-event="click" ani-event-once="true" ani-scope-class-var="animationclass" ani-trigger-element-id="animateit" ani-trigger-element-event="click" ani-trigger-once="true">
 			</div>
@@ -396,7 +403,102 @@ ani-trigger-element-event="click" ani-trigger-once="true"&gt;&lt;/div&gt;</code>
 				  <button id="animateit" style="margin: 0px;display: inherit;">Animate it </button>
 			  </div>
 			  <br/><br/><hr/>
-			  
+			  <!-- ---------------------------------------------------------------------------- -->
+			<h1>On Dom Scroll:</h1>	
+			  <pre><code>&lt;div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInLeft"&gt;&lt;/div&gt;</code></pre>
+				<br/><br/>
+				
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)"ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 153, 148)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(149, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" style="background-color:rgb(10, 148, 153)" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
+				
+				<div class="anidiv" style="background-color:rgb(95, 153, 10)" ani ani-on-dom-scroll="true" ani-class ="slideInLeft" ></div>
+				
+				<br/><hr/><br/>
+				<div class="anidiv" ani ani-on-dom-scroll="true" ani-class ="slideInRight" ></div>
+				
+				<br/><hr/><br/>
 			<h1>
 			<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h1>
 
