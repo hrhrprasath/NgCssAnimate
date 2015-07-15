@@ -20,7 +20,7 @@ Usage
 &emsp;6)<b>ani-event-once ="true" </b>:  means animation will be triggered only once<br>
 &emsp;7)<b>ani-trigger-element-id="btn1" ani-trigger-element-event="click"</b> :  attributes which can be used to trigger animation based on other element activation <br>
 &emsp;8)<b>ani-trigger-once="true"</b> : trigger animation based on other element activity only once<br>
-&emsp;9)<b>ani-scope-class-var="animationclass" </b>: name of the scope variable which represents the animation css class.Animation is triggered whenever the value to the scope variable changes if other events or trigger elements <br>
+&emsp;9)<b>ani-scope-class-var="animationclass" </b>: name of the scope variable which represents the animation css class.Animation is triggered whenever the value to the scope variable changes if other events or trigger elements are not present <br>
 &emsp;10)<b>ani-on-dom-scroll="true"</b> :  trigger's animation on scroll once the element is visible <br>
 
 <b>*If you are not using animate.css just pass your css class name's</b>
