@@ -1,7 +1,8 @@
 # NgCssAnimator
   A simple Angular Directive to trigger animation from <a href="http://daneden.github.io/animate.css/">animation.css </a> via various ways based on the attributes given in tag.Very simple to use and easy to implement.All you need is to add ngcssanimator in your app and add the directive in the html elements which you want to animate 
 
-  For More detatils Please visit <a href="http://hrhrprasath.github.io/NgCssAnimate/"> http://hrhrprasath.github.io/NgCssAnimate/</a>
+  For More detatils Please visit <a href="http://hrhrprasath.github.io/NgCssAnimate/"> http://hrhrprasath.github.io/NgCssAnimate/ </a>
+  
 Usage
 =======
   Make sure to load AngularJS first, and then `NgCssAnimate.min.js`.
